@@ -6,8 +6,6 @@
 
   * <h6>Atoms: 가장 작은 component 요소로, input, button 등의 tag들이 포함될 수 있다. <br>
     편리하게 재사용하기 위해 특정 값을 종속시키지 않고 props로 값을 전달받아 사용할 수 있도록 설계하는 것이 바람직하다.</h6>
-    ![atom](https://user-images.githubusercontent.com/58763448/116198731-4a9edb80-a771-11eb-9b06-fa949822e169.jpeg)
-    <br><br>
 
   * <h6>Molecules: Atom을 여러개 조합한 component로, label + input과 같은 형태의 email 입력 폼과 같은 형태로 사용이 가능해진다. <br><br></h6>
   * <h6>Organisms: Atom과 Molecule을 조합한 component로, 여러개의 form을 합쳐 signUp form과 같은 형태로 사용할 수 있다.<br>
