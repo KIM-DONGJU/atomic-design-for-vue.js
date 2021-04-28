@@ -1,6 +1,6 @@
 import { createWebHistory, createRouter } from "vue-router";
 import Home from "../App.vue";
-import Atom from "../components/pages/atoms.vue";
+import Atoms from "../components/pages/atoms.vue";
 
 
 const routes = [
@@ -9,9 +9,9 @@ const routes = [
 		name: "Home",
 		component: Home,
 	}, {
-		path: "/atom",
+		path: "/atoms",
 		name: "Atoms",
-		component: Atom,
+		component: Atoms,
 	},
 ];
 
