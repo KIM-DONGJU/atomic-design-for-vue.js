@@ -32,3 +32,14 @@
 ## 단점을 극복하기 위해서는
 * <h5> 처음부터 atomic design을 고려하여 UI를 설계한다. </h5>
 * ~~<h5> 재사용성이 크지 않을 경우 사용하지 않는 것이 오히려 효율적일 수 있다.</h5>~~
+
+
+## :rocket: 설치 및 실행
+### 1. 기본 환경에서의 실행<br>
+```git clone https://github.com/KIM-DONGJU/atomic-design-for-vue.js.git```
+
+<strong>Build a vue project</strong>
+```cd atomic-design-template
+npm install 
+npm run serve
+```
