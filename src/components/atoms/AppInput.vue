@@ -8,31 +8,28 @@ export default {
     return {};
   },
   props: {
-    inputClass: {
-      type: String,
-      default: "square center",
-    },
+    inputClass: String,
   },
 };
 </script>
 <style scoped>
+/* default style */
 input {
   width: 100%;
   border: 1px solid darkgray;
-}
-
-.shape-square {
   border-radius: 5px;
+  text-align: center;
 }
+/* default style end*/
 
+/* shape style */
 .shape-rounded {
   border-radius: 2rem;
 }
 
-.center::placeholder {
-  text-align: center;
-}
+/* shape style end */
 
+/* placeholder text style */
 .left::placeholder {
   text-align: left;
 }
@@ -40,4 +37,6 @@ input {
 .right::placeholder {
   text-align: right;
 }
+
+/* placeholder text style end */
 </style>
