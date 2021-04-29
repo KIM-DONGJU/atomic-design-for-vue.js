@@ -18,7 +18,10 @@ input {
   width: 100%;
   border: 1px solid darkgray;
   border-radius: 5px;
-  text-align: center;
+}
+
+input::placeholder {
+  text-align: left;
 }
 /* default style end*/
 
@@ -30,8 +33,8 @@ input {
 /* shape style end */
 
 /* placeholder text style */
-.left::placeholder {
-  text-align: left;
+.center::placeholder {
+  text-align: center;
 }
 
 .right::placeholder {

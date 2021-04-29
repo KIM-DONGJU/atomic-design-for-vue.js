@@ -77,10 +77,7 @@ export default {
 .title {
   text-align: center;
 }
-.app-link {
-  box-shadow: 0 0 0.9375rem 0.25rem rgb(34 35 36 / 5%);
-  background: rgba(0, 0, 0, 0.5);
-}
+
 .app-input,
 .app-button,
 .app-link {
@@ -88,5 +85,10 @@ export default {
   display: flex;
   justify-content: space-evenly;
   gap: 20px;
+}
+
+.app-link {
+  box-shadow: 0 0 0.9375rem 0.25rem rgb(34 35 36 / 5%);
+  background: rgba(0, 0, 0, 0.5);
 }
 </style>
