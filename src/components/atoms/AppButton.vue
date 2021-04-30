@@ -28,6 +28,10 @@ button {
   color: white;
   cursor: pointer;
 }
+
+button:active {
+  transform: translateY(4px);
+}
 /* defauat style end*/
 
 /* shape style */
