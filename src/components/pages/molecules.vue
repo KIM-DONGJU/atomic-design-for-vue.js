@@ -1,11 +1,17 @@
 <template>
   <div class="molecules-list">
     <div class="input-form-container">
-      <h2 class="title">InputForm example</h2>
+      <h2 class="title">InputForm Example</h2>
       <div class="input-form">
         <InputForm :inputValue="inputValues[0]" :title="inputValues[0].title" />
         <InputForm :inputValue="inputValues[1]" :title="inputValues[1].title" />
         <InputForm :inputValue="inputValues[2]" :title="inputValues[2].title" />
+      </div>
+    </div>
+    <div class="horizontal-link-lisk-container">
+      <h2 class="title">HorizontalLinkList Example</h2>
+      <div class="horizontal-link-lisk">
+        <HorizontalLinkList :links="links" />
       </div>
     </div>
   </div>
@@ -13,11 +19,13 @@
 
 <script>
 import InputForm from "../molecules/InputForm.vue";
+import HorizontalLinkList from "../molecules/HorizontalLinkList.vue";
 
 export default {
   name: "Atoms",
   components: {
     InputForm,
+    HorizontalLinkList,
   },
   data() {
     return {
@@ -39,6 +47,32 @@ export default {
           placeholder: "no title, type textarea",
         },
       ],
+      links: [
+        {
+          label: "atoms",
+          path: "/atoms",
+          linkClass: "font-color-black",
+        },
+        {
+          label: "molecules",
+          path: "/molecules",
+          linkClass: "font-color-red",
+        },
+        {
+          label: "organisms",
+          path: "/organisms",
+        },
+        {
+          label: "templates",
+          path: "/templates",
+          linkClass: "font-color-black",
+        },
+        {
+          label: "pages",
+          path: "/pages",
+          linkClass: "font-color-black",
+        },
+      ],
     };
   },
   props: {},
@@ -58,5 +92,9 @@ export default {
   justify-content: space-evenly;
   align-items: center;
   gap: 20px;
+}
+
+.horizontal-link-lisk {
+  background-color: lightblue;
 }
 </style>
