@@ -1,8 +1,8 @@
 <template>
-  <a v-if="isNewWindow" class="app-link" :href="path" target="_blank">
+  <a v-if="isNewWindow" :class="linkClass" :href="path" target="_blank">
     {{ label }}
   </a>
-  <router-link v-else class="app-link" :to="path">
+  <router-link v-else :class="linkClass" :to="path">
     {{ label }}
   </router-link>
 </template>
@@ -16,6 +16,7 @@ export default {
   props: {
     label: String,
     path: String,
+    linkClass: String,
     isNewWindow: {
       type: Boolean,
       default: false,
@@ -25,12 +26,22 @@ export default {
 </script>
 
 <style scoped>
-.app-link {
+a,
+router-link {
   text-decoration: none;
   transition: all 0.3s;
   color: white;
 }
-.app-link:hover {
+a:hover,
+router-link:hover {
   font-weight: bolder;
+}
+
+.font-color-black {
+  color: black;
+}
+
+.font-color-red {
+  color: red;
 }
 </style>
