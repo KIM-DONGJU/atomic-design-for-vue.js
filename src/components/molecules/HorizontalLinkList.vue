@@ -42,5 +42,6 @@ export default {
 }
 .horizontal-link-list ul li {
   flex: 1;
+  text-align: center;
 }
 </style>
