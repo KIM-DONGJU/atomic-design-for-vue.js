@@ -2,6 +2,7 @@ import { createWebHistory, createRouter } from "vue-router";
 import Home from "../App.vue";
 import Atoms from "../components/pages/atoms.vue";
 import Molecules from "../components/pages/molecules.vue";
+import Organisms from "../components/pages/organisms.vue";
 
 
 const routes = [
@@ -17,6 +18,10 @@ const routes = [
 		path: "/molecules",
 		name: "Molecules",
 		component: Molecules,
+	}, {
+		path: "/organisms",
+		name: "Organisms",
+		component: Organisms,
 	}
 ];
 

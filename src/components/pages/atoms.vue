@@ -49,6 +49,14 @@
         />
       </div>
     </div>
+    <div class="app-logo-container">
+      <h2 class="title">AppLogo example</h2>
+      <div class="app-logo">
+        <AppLogo />
+        <AppLogo logoClass="middle" />
+        <AppLogo logoClass="small" />
+      </div>
+    </div>
   </div>
 </template>
 
@@ -56,6 +64,7 @@
 import AppInput from "../atoms/AppInput.vue";
 import AppButton from "../atoms/AppButton.vue";
 import AppLink from "../atoms/AppLink.vue";
+import AppLogo from "../atoms/AppLogo.vue";
 
 export default {
   name: "Atoms",
@@ -63,6 +72,7 @@ export default {
     AppInput,
     AppButton,
     AppLink,
+    AppLogo,
   },
   data() {
     return {};
@@ -80,7 +90,8 @@ export default {
 
 .app-input,
 .app-button,
-.app-link {
+.app-link,
+.app-logo {
   width: 100%;
   display: flex;
   justify-content: space-evenly;
