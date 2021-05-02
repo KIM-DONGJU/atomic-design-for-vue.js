@@ -25,6 +25,11 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.navbar-container {
+  display: fixed;
+  top: 0;
+}
+
 .title {
   text-align: center;
 }
