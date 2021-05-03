@@ -33,8 +33,8 @@
       <div class="app-link">
         <AppLink path="localhost:8080" label="Home" />
         <AppLink
-          path="https://www.naver.com"
-          label="Naver"
+          path="https://github.com/KIM-DONGJU"
+          label="git"
           isNewWindow="true"
         />
         <AppLink
