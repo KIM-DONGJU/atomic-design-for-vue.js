@@ -37,11 +37,11 @@ router-link:hover {
   font-weight: bolder;
 }
 
-.font-color-black {
+.font-black {
   color: black;
 }
 
-.font-color-red {
+.font-red {
   color: red;
 }
 </style>

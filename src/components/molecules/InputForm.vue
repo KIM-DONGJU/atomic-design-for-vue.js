@@ -10,7 +10,7 @@
 </template>
 
 <script>
-import AppInput from "../atoms/AppInput";
+import AppInput from "../atoms/AppInput/index.vue";
 
 export default {
   name: "InputForm",

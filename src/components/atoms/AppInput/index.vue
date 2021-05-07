@@ -8,14 +8,15 @@ export default {
     return {};
   },
   props: {
+    type: String,
     inputClass: String,
+    placeholder: String,
   },
 };
 </script>
 <style scoped>
 /* default style */
 input {
-  width: 100%;
   border: 1px solid darkgray;
   border-radius: 5px;
 }
