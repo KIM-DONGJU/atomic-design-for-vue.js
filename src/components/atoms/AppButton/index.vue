@@ -20,7 +20,6 @@ export default {
 <style scoped>
 /* default style */
 button {
-  width: 100%;
   border: 0;
   border-radius: 3rem;
   text-align: center;

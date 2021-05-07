@@ -15,7 +15,7 @@ const Template = (args) => ({
     return { args };
   },
   // And then the `args` are bound to your component with `v-bind="args"`
-  template: '<AppButton v-bind="args" style="width: 10%"/>'
+  template: '<AppButton v-bind="args" style="width: 20%;/>'
 });
 
 export const Primary = Template.bind({});
@@ -23,7 +23,32 @@ Primary.args = {
   label: 'Button',
 };
 
-export const brimary = Template.bind({});
-brimary.args = {
-  label: 'Button2',
+export const ShapeSquare = Template.bind({});
+ShapeSquare.args = {
+  label: 'shape square',
+  buttonClass: 'shape-square'
+};
+
+export const BackgroundWhite = Template.bind({});
+BackgroundWhite.args = {
+  label: 'background white',
+  buttonClass: 'bg-white'
+};
+
+export const BackgroundGray = Template.bind({});
+BackgroundGray.args = {
+  label: 'background gray',
+  buttonClass: 'bg-gray'
+};
+
+export const TextLeft = Template.bind({});
+TextLeft.args = {
+  label: 'text left',
+  buttonClass: 'left'
+};
+
+export const BackgroundWhiteAndTextRight = Template.bind({});
+BackgroundWhiteAndTextRight.args = {
+  label: 'text left',
+  buttonClass: 'bg-white right'
 };
