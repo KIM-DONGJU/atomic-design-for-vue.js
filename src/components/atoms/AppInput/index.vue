@@ -8,7 +8,10 @@ export default {
     return {};
   },
   props: {
-    type: String,
+    type: {
+      type: String,
+      default: "text",
+    },
     inputClass: String,
     placeholder: String,
   },

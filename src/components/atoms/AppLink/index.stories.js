@@ -4,6 +4,12 @@ export default {
   title: 'Atoms/AppLink',
   component: AppLink,
   argTypes: {
+    linkClass: {
+      control: {
+        type: "inline-radio",
+        options:["font-black", "font-red"],
+      }
+    }
   },
 };
 
@@ -42,6 +48,6 @@ export const NewWindowTrueAndFontBlack = Template.bind({});
 NewWindowTrueAndFontBlack.args = {
   label: "git-hub",
   path: "https://github.com/KIM-DONGJU",
-  linkClass: "font-red",
+  linkClass: "font-black",
   isNewWindow: "True"
 };

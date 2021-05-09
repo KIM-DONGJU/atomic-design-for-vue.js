@@ -4,6 +4,12 @@ export default {
   title: 'Atoms/AppLogo',
   component: AppLogo,
   argTypes: {
+      logoClass: {
+          control: {
+              type: 'inline-radio',
+              options: ['large', 'middle', 'small']
+          }
+      }
   },
 };
 

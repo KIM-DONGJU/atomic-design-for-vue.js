@@ -21,6 +21,7 @@ export default {
 
 <style scoped>
 .app-logo {
+  width: 100%;
   text-align: center;
 }
 

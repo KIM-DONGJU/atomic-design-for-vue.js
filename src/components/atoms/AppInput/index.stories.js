@@ -4,6 +4,12 @@ export default {
   title: 'Atoms/AppInput',
   component: AppInput,
   argTypes: {
+    inputClass: {
+      control: {
+        type:"check",
+        options: ['shape-rounded', 'center', 'right']
+      }
+    }
   },
 };
 

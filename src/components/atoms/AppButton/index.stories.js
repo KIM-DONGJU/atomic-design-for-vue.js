@@ -4,6 +4,12 @@ export default {
   title: 'Atoms/AppButton',
   component: AppButton,
   argTypes: {
+    buttonClass: {
+      control: {
+        type:"check",
+        options: ['shape-square', 'bg-white', 'bg-gray', 'left', 'right']
+      }
+    }
   },
 };
 
