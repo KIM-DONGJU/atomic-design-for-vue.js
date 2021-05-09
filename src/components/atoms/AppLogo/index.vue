@@ -1,6 +1,6 @@
 <template>
   <div class="app-logo">
-    <img src="@/assets/images/logo/atomic-design.png" :class="logoClass" />
+    <img src="../../../assets/images/logo/atomic-design.png" :class="logoClass" />
   </div>
 </template>
 
@@ -21,7 +21,6 @@ export default {
 
 <style scoped>
 .app-logo {
-  width: 100%;
   text-align: center;
 }
 
