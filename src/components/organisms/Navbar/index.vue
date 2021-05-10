@@ -1,10 +1,13 @@
 <template>
   <div class="nav-bar">
     <div class="logo">
-      <AppLogo logoClass="middle" />
+      <AppLogo logoClass="small" :src="logo" />
     </div>
     <div class="nav">
       <HorizontalLinkList :links="links" />
+    </div>
+    <div class="login">
+      <Login />
     </div>
   </div>
 </template>
@@ -12,6 +15,8 @@
 <script>
 import AppLogo from "../../atoms/AppLogo/index.vue";
 import HorizontalLinkList from "../../molecules/HorizontalLinkList/index.vue";
+import Login from "../../molecules/Login/index.vue";
+import logo from '../../../assets/images/logo/atomic-design.png'
 
 export default {
   name: "NavBar",
@@ -36,11 +41,13 @@ export default {
           isNewWindow: true,
         },
       ],
+      logo: logo,
     };
   },
   components: {
     AppLogo,
     HorizontalLinkList,
+    Login,
   },
 };
 </script>
@@ -48,19 +55,27 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .nav-bar {
-  width: 50%;
+  position: fixed;
+  top:0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1080px;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-content: center;
+  align-items: center;
 }
 
 .logo {
-  margin: auto 0;
+  text-align: center;
   flex: 1;
 }
 
 .nav {
-  flex: 9;
+  flex: 4;
+}
+
+.login {
+  margin: auto 0;
+  text-align: right;
+  flex: 1;
 }
 </style>

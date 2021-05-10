@@ -1,6 +1,6 @@
 <template>
-  <div class="app-logo">
-    <img :src="path" :class="logoClass" />
+  <div :class="logoClass">
+    <img :src="src" />
   </div>
 </template>
 
@@ -11,34 +11,34 @@ export default {
     return {};
   },
   props: {
-    logoClass: {
-      type: String,
-      default: "large",
-    },
-    path: String,
+    logoClass: String,
+    src: String,
   },
 };
 </script>
 
 <style scoped>
-.app-logo {
+.right {
+  text-align: right;
+}
+
+.left {
+  text-align: left;
+}
+
+.large img{
+  vertical-align: middle;
   width: 100%;
-  text-align: center;
 }
 
-.app-logo img {
-  object-fit: contain;
-}
-
-.large {
-  width: 100%;
-}
-
-.middle {
+.middle img{
+  vertical-align: middle;
   width: 50%;
 }
 
-.small {
+.small img{
+  vertical-align: middle;
   width: 25%;
 }
+
 </style>

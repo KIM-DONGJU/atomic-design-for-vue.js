@@ -32,17 +32,12 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-.horizontal-link-list {
-  width: 100%;
-}
-
 .horizontal-link-list ul {
-  display: flex;
-  justify-content: space-around;
-  list-style-type: none;
+  padding-left: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 .horizontal-link-list ul li {
-  flex: 1;
-  text-align: center;
+  display: inline-block;
 }
 </style>

@@ -1,5 +1,5 @@
 import AppLogo from './index.vue';
-import path from '../../../assets/images/logo/atomic-design.png'
+import src from '../../../assets/images/logo/atomic-design.png'
 
 export default {
   title: 'Atoms/AppLogo',
@@ -7,8 +7,8 @@ export default {
   argTypes: {
       logoClass: {
           control: {
-              type: 'inline-radio',
-              options: ['large', 'middle', 'small']
+              type: 'inline-check',
+              options: ['large', 'middle', 'small', 'left','right']
           }
       }
   },
@@ -27,17 +27,17 @@ const Template = (args) => ({
 
 export const Primary = Template.bind({});
 Primary.args = {
-  path: path
+  src: src
 };
 
 export const Middle = Template.bind({});
 Middle.args = {
   logoClass:"middle",
-  path: path,
+  src: src,
 };
 
 export const Small = Template.bind({});
 Small.args = {
   logoClass:"small",
-  path: path,
+  src: src,
 };

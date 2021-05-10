@@ -30,6 +30,8 @@ a,
 router-link {
   text-decoration: none;
   transition: all 0.3s;
+  cursor: pointer;
+  margin: 0 10px;
 }
 a:hover,
 router-link:hover {
