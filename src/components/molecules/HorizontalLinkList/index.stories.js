@@ -25,13 +25,11 @@ Primary.args = {
         label: "git-hub",
         path: "https://github.com/KIM-DONGJU",
         isNewWindow: true,
-        linkClass:"font-black",
       },
       {
         label: "naver",
         path: "https://www.naver.com",
         isNewWindow: true,
-        linkClass:"font-black",
       },
       {
         label: "youtube",
