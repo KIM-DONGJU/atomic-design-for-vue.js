@@ -1,4 +1,5 @@
 import AppLogo from './index.vue';
+import path from '../../../assets/images/logo/atomic-design.png'
 
 export default {
   title: 'Atoms/AppLogo',
@@ -26,14 +27,17 @@ const Template = (args) => ({
 
 export const Primary = Template.bind({});
 Primary.args = {
+  path: path
 };
 
 export const Middle = Template.bind({});
 Middle.args = {
-    logoClass:"middle"
+  logoClass:"middle",
+  path: path,
 };
 
 export const Small = Template.bind({});
 Small.args = {
-    logoClass:"small"
+  logoClass:"small",
+  path: path,
 };

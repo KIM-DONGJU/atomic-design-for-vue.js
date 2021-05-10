@@ -1,6 +1,6 @@
 <template>
   <div class="app-logo">
-    <img src="../../../assets/images/logo/atomic-design.png" :class="logoClass" />
+    <img :src="path" :class="logoClass" />
   </div>
 </template>
 
@@ -15,6 +15,7 @@ export default {
       type: String,
       default: "large",
     },
+    path: String,
   },
 };
 </script>
