@@ -6,6 +6,7 @@
           :label="link.label"
           :path="link.path"
           :linkClass="link.linkClass"
+          :isNewWindow="link.isNewWindow"
         />
       </li>
     </ul>
@@ -13,7 +14,7 @@
 </template>
 
 <script>
-import AppLink from "../atoms/AppLink";
+import AppLink from "../../atoms/AppLink/index.vue";
 
 export default {
   name: "HorizontalLinkList",

@@ -2,15 +2,15 @@
   <div class="input-form-container">
     <p class="title" v-if="title">{{ title }}</p>
     <AppInput
-      :type="inputValue.type"
-      :placeholder="inputValue.placeholder"
-      :inputClass="inputValue.inputClass"
+      :type="input.type"
+      :placeholder="input.placeholder"
+      :inputClass="input.inputClass"
     />
   </div>
 </template>
 
 <script>
-import AppInput from "../atoms/AppInput/index.vue";
+import AppInput from "../../atoms/AppInput/index.vue";
 
 export default {
   name: "InputForm",
@@ -22,17 +22,13 @@ export default {
   },
   props: {
     title: String,
-    inputValue: Object,
+    input: Object,
   },
 };
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-.input-form-container {
-  width: 100%;
-}
-
 .title {
   font-size: 1rem;
   margin: 0;
