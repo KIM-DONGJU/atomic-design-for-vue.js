@@ -34,7 +34,6 @@ export const FontBlack = Template.bind({});
 FontBlack.args = {
   label: "git-hub",
   path: "https://github.com/KIM-DONGJU",
-  linkClass: "font-black",
 };
 
 export const FontRed = Template.bind({});
@@ -48,6 +47,5 @@ export const NewWindowTrueAndFontBlack = Template.bind({});
 NewWindowTrueAndFontBlack.args = {
   label: "git-hub",
   path: "https://github.com/KIM-DONGJU",
-  linkClass: "font-black",
   isNewWindow: "True"
 };

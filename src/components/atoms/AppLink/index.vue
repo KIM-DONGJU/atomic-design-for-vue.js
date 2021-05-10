@@ -30,15 +30,10 @@ a,
 router-link {
   text-decoration: none;
   transition: all 0.3s;
-  color: white;
 }
 a:hover,
 router-link:hover {
   font-weight: bolder;
-}
-
-.font-black {
-  color: black;
 }
 
 .font-red {
