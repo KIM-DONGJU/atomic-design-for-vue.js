@@ -7,7 +7,7 @@
       </p>
     </article>
     <div class="card" v-for="card in cards" v-bind:key="card">
-      <VerticalCard :cards="card" />
+      <VerticalCard :card="card" />
     </div>
   </div>
 </template>

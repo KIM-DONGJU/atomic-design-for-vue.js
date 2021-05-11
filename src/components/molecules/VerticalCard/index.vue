@@ -1,9 +1,9 @@
 <template> 
     <div class="card">
-        <AppLogo :src="cards.src" />
-        <h3>{{ cards.title }}</h3>
+        <AppLogo :src="card.src" />
+        <h3>{{ card.title }}</h3>
         <article>
-            <p v-for="content in cards.subtitle" v-bind:key="content">{{  content  }}</p>
+            <p v-for="content in card.subtitle" v-bind:key="content">{{  content  }}</p>
         </article>
     </div>
 </template>
@@ -21,7 +21,7 @@ export default {
     };
   },
   props: {
-      cards: Object,
+      card: Object,
   },
 };
 </script>
