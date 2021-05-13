@@ -1,8 +1,6 @@
 import { createWebHistory, createRouter } from "vue-router";
 import Home from "../App.vue";
-import Atoms from "../components/pages/atoms.vue";
-import Molecules from "../components/pages/molecules.vue";
-import Organisms from "../components/pages/organisms.vue";
+import HorizontalCard from "../components/molecules/HorizontalCard/index.vue"
 
 
 const routes = [
@@ -11,18 +9,10 @@ const routes = [
 		name: "Home",
 		component: Home,
 	}, {
-		path: "/atoms",
-		name: "Atoms",
-		component: Atoms,
-	}, {
-		path: "/molecules",
-		name: "Molecules",
-		component: Molecules,
-	}, {
-		path: "/organisms",
-		name: "Organisms",
-		component: Organisms,
-	}
+		path: "/horizontalcard",
+		name: "HorizontalCard",
+		component: HorizontalCard,
+	},
 ];
 
 const router = createRouter({
