@@ -28,6 +28,7 @@ Primary.args = {
       subtitle: [
         "HTML·CSS·JQuery 웹 퍼블리싱",
         "Vue·React SPA 개발",
-      ]
-    }
+      ],
+      path: "/"
+    },
 };
