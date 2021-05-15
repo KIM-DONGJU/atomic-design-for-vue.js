@@ -1,40 +1,35 @@
 <template>
-  	<footer>
-	  <div>
-	    <div class="footer_links">
-	      <div class="brand">
-	        <span>김동주</span>
-	      </div>
-	      <div class="policy">
-	        <a href="/policy">개인정보 처리 방침</a>
-	      </div>
-	      <div class="sns">
-	        <a href="kdj0689@gmail.com" title="이메일">
-	          <img src="@/assets/images/mail.png" alt="이메일">
-	        </a>
-	        <a href="" title="카카오톡">
-	          <img src="@/assets/images/kakao.png" alt="카카오톡">
-	        </a>
-	        <a href="https://github.com/opzyra" target="_blank" title="깃허브">
-	          <img src="@/assets/images/git.png" alt="깃허브">
-	        </a>
-	      </div>
-	    </div>
-	    <div class="info">
-	      <span><strong>김동주</strong></span>
-	      <span>이메일 kdj0689@gmail.com</span>
-	      <span class="visual_pc">카카오톡 kdj0689</span>
-	      <span>깃허브 KIM-DONGJU</span>
-	      <div>Copyright ⓒ 2021 Devhyun All Rights Reserved.</div>
-	    </div>
-	  </div>
+  <footer>
+    <div class="sns">
+      <a href="kdj0689@gmail.com">
+        <img src="../../../assets/images/logo/email.png">
+      </a>
+      <a href="/">
+        <img src="../../../assets/images/logo/kakao.png">
+      </a>
+      <a href="https://github.com/KIM-DONGJU">
+        <img src="../../../assets/images/logo/git.png">
+      </a>
+    </div>
 	</footer>
 </template>
 
 <script>
-export default {
+import AppLink from "../../atoms/AppLink/index.vue";
 
-}
+export default {
+  name: "AppFooter",
+  data() {
+    return {
+    };
+  },
+  props:{
+  },
+  components: {
+    AppLink,
+  },
+};
+
 </script>
 
 <style scoped>
@@ -89,5 +84,13 @@ html {
     color: #b2bbc3;
     align-items: center;
     justify-content: space-between;
+}
+
+footer .sns a img {
+  opacity: 0.6;
+}
+
+footer .sns a img:hover {
+  opacity: 1;
 }
 </style>
