@@ -28,6 +28,7 @@ export default {
 <style scoped>
 a,
 router-link {
+  color: black;
   text-decoration: none;
   transition: all 0.3s;
   cursor: pointer;
