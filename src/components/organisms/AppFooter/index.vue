@@ -46,6 +46,8 @@ export default {
 footer .footer-link {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #485561;
 }
 
 footer .footer-link .brand {
