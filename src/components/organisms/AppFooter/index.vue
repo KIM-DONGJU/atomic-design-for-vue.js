@@ -21,6 +21,12 @@
         </a>
       </div>
     </div>
+    <div class="info">
+      <span>김동주</span>
+      <span>이메일 kdj0689@gmail.com</span>
+      <span>카카오톡 kdj0689</span>
+      <span>깃허브 KIM-DONGJU</span>
+    </div>
 	</footer>
 </template>
 
@@ -64,5 +70,13 @@ footer .footer-link .sns a img {
 
 footer .footer-link .sns a img:hover {
   opacity: 1;
+}
+
+footer .info {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 15px;
 }
 </style>
