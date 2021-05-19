@@ -41,4 +41,8 @@ router-link:hover {
 .font-red {
   color: red;
 }
+
+.font-white {
+  color: white;
+}
 </style>
