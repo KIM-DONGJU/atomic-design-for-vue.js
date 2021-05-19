@@ -6,7 +6,7 @@
           <span>김동주</span>
         </div>
         <div class="policy">
-          <AppLink path="/" isNewWindow="true" label="개인정보 처리 방침" />
+          <AppLink path="/" isNewWindow="true" label="개인정보 처리 방침" linkClass="font-white"/>
         </div>
       </div>
       <div class="sns">
@@ -26,6 +26,9 @@
       <span>이메일 kdj0689@gmail.com</span>
       <span>카카오톡 kdj0689</span>
       <span>깃허브 KIM-DONGJU</span>
+    </div>
+    <div class="copyright">
+      Copyright ⓒ 2021 KIMDONGJU All Rights Reserved.
     </div>
 	</footer>
 </template>
@@ -49,6 +52,14 @@ export default {
 </script>
 
 <style scoped>
+html,
+body,
+template,
+footer {
+  background-color: #39424c;
+  color: white;
+}
+
 footer .footer-link {
   display: flex;
   justify-content: space-between;
@@ -63,8 +74,18 @@ footer .footer-link .brand {
   gap: 20px;
 }
 
+footer .footer-link .sns {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+footer .footer-link .sns a {
+  width: 25%;
+}
 
 footer .footer-link .sns a img {
+  width: 100%;
   opacity: 0.6;
 }
 
@@ -78,5 +99,6 @@ footer .info {
   flex-direction: row;
   justify-content: flex-start;
   gap: 15px;
+  color: #647586;
 }
 </style>
