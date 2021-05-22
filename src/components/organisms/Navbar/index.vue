@@ -1,9 +1,7 @@
 <template>
   <div class="nav-bar">
-    <div class="logo">
+    <div class="menu">
       <AppLogo logoClass="small" :src="logo" />
-    </div>
-    <div class="nav">
       <HorizontalLinkList :links="links" />
     </div>
     <div class="login">
@@ -59,23 +57,17 @@ export default {
   top:0;
   left: 50%;
   transform: translateX(-50%);
-  width: 1080px;
+  width: 1200px;
   display: flex;
   align-items: center;
+  background-color: white;
 }
 
-.logo {
+.menu {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
   text-align: center;
-  flex: 1;
 }
 
-.nav {
-  flex: 4;
-}
-
-.login {
-  margin: auto 0;
-  text-align: right;
-  flex: 1;
-}
 </style>
