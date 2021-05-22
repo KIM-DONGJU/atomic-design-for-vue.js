@@ -35,6 +35,7 @@ export default {
 .login-container {
   display: flex;
   align-items: center;
+  gap:10px;
 }
 
 .app-logo {
