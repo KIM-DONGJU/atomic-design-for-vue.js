@@ -34,8 +34,9 @@ export default {
 <style scoped>
 .horizontal-link-list ul {
   padding-left: 0px;
-  margin-top: 0px;
-  margin-bottom: 0px;
+  margin: 0 50px;
+  display: flex;
+  gap: 50px;
 }
 .horizontal-link-list ul li {
   display: inline-block;
