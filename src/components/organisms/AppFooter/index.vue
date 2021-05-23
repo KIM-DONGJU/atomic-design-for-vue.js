@@ -101,4 +101,9 @@ footer .info {
   gap: 15px;
   color: #647586;
 }
+
+footer .copyright {
+  margin-top: 10px;
+  padding-bottom: 15px;
+}
 </style>
