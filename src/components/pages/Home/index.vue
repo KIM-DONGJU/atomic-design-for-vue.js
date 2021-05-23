@@ -98,13 +98,17 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+body {
+  padding: 0;
+}
+
 .home .vertical-cards,
 .home .horizontal-cards {
-  margin-top: 100px;
+  width: 1080px;
+  margin: 100px auto 0 auto;
 }
 
 .home footer {
-  margin-top: 150px;
+  margin-top: 100px;
 }
-
 </style>
