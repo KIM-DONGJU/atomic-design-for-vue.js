@@ -1,5 +1,5 @@
 <template>
-  <footer>
+  <section>
     <div class="footer-link">
       <div class="brand">
         <div class="brand-name">
@@ -30,7 +30,7 @@
     <div class="copyright">
       Copyright ⓒ 2021 KIMDONGJU All Rights Reserved.
     </div>
-	</footer>
+	</section>
 </template>
 
 <script>
@@ -52,49 +52,50 @@ export default {
 </script>
 
 <style scoped>
-html,
-body,
-template,
-footer {
+section {
+  padding: 20px;
   background-color: #39424c;
   color: white;
 }
 
-footer .footer-link {
+section .footer-link {
+  width: 1080px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid #485561;
+  margin: 0 auto;
 }
 
-footer .footer-link .brand {
+section .footer-link .brand {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 20px;
 }
 
-footer .footer-link .sns {
+section .footer-link .sns {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
 }
 
-footer .footer-link .sns a {
+section .footer-link .sns a {
   width: 25%;
 }
 
-footer .footer-link .sns a img {
+section .footer-link .sns a img {
   width: 100%;
   opacity: 0.6;
 }
 
-footer .footer-link .sns a img:hover {
+section .footer-link .sns a img:hover {
   opacity: 1;
 }
 
-footer .info {
-  margin-top: 15px;
+section .info {
+  width: 1080px;
+  margin: 15px auto 0 auto;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -102,8 +103,14 @@ footer .info {
   color: #647586;
 }
 
-footer .copyright {
-  margin-top: 10px;
+section .copyright {
+  width: 1080px;
+  margin: 10px auto 0 auto;
   padding-bottom: 15px;
+}
+
+section .info span:nth-child(n):nth-child(-n+3)::after {
+  content: "|";
+  margin-left: 15px;
 }
 </style>
