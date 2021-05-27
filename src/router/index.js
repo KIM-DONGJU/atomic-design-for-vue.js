@@ -1,24 +1,23 @@
 import { createWebHistory, createRouter } from "vue-router";
-import Home from "../App.vue";
-import HorizontalCard from "../components/molecules/HorizontalCard/index.vue"
-
+import App from "../App.vue";
+import Home from "../components/pages/Home/index.vue";
 
 const routes = [
-	{
-		path: "/",
-		name: "Home",
-		component: Home,
-	}, {
-		path: "/horizontalcard",
-		name: "HorizontalCard",
-		component: HorizontalCard,
-	},
+  {
+    path: "/",
+    name: "App",
+    component: App,
+  },
+  {
+    path: "/home",
+    name: "Home",
+    component: Home,
+  },
 ];
 
 const router = createRouter({
-	history: createWebHistory(),
-	routes,
+  history: createWebHistory(),
+  routes,
 });
-
 
 export default router;

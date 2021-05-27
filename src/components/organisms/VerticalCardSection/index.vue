@@ -21,7 +21,7 @@ export default {
     return {
     };
   },
-  props:{
+  props: {
     label: String,
     contents: Array,
     cards: Array,

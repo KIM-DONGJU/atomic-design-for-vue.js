@@ -7,9 +7,17 @@
 <script>
 export default {
   name: "App",
-  components: {},
+  components: {
+
+  },
+  mounted() {
+    console.log("Atomic-Design-Template");
+  }
 };
 </script>
 
 <style scoped>
+body {
+  margin: 0;
+}
 </style>
