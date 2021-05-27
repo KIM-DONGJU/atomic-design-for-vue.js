@@ -4,7 +4,11 @@
       <Navbar />
     </header>
     <div class="vertical-cards">
-      <VerticalCardSection :cards="verticalCards" :label="label" :contents="contents"/>
+      <VerticalCardSection
+        :cards="verticalCards"
+        :label="label"
+        :contents="contents"
+      />
     </div>
     <div class="horizontal-cards">
       <HorizontalCardSection :cards="horizontalCards" />
@@ -21,12 +25,11 @@ import VerticalCardSection from "../../organisms/VerticalCardSection/index.vue";
 import HorizontalCardSection from "../../organisms/HorizontalCardSection/index.vue";
 import AppFooter from "../../organisms/AppFooter/index.vue";
 
-import frontend from '../../../assets/images/logo/frontend.png';
-import backend from '../../../assets/images/logo/backend.png';
-import devops from '../../../assets/images/logo/server.png';
-import company from '../../../assets/images/logo/company.png';
-import personal from '../../../assets/images/logo/personal.png';
-
+import frontend from "../../../assets/images/logo/frontend.png";
+import backend from "../../../assets/images/logo/backend.png";
+import devops from "../../../assets/images/logo/server.png";
+import company from "../../../assets/images/logo/company.png";
+import personal from "../../../assets/images/logo/personal.png";
 
 export default {
   name: "Home",
@@ -36,57 +39,41 @@ export default {
         {
           src: frontend,
           title: "Frontend",
-          subtitle: [
-            "HTML·CSS·JQuery 웹 퍼블리싱",
-            "Vue·React SPA 개발"
-          ]
+          subtitle: ["HTML·CSS·JQuery 웹 퍼블리싱", "Vue·React SPA 개발"],
         },
         {
           src: backend,
           title: "Backend",
-          subtitle: [
-            "SpringBoot·NodeJS API 구축",
-            "MySQL DB 스키마 설계"
-          ]
+          subtitle: ["SpringBoot·NodeJS API 구축", "MySQL DB 스키마 설계"],
         },
         {
           src: devops,
           title: "Devops",
-          subtitle: [
-            "Linux·AWS 서버 구축",
-            "Git 버전관리",
-          ]
-        }
+          subtitle: ["Linux·AWS 서버 구축", "Git 버전관리"],
+        },
       ],
       label: "Skills",
       contents: [
         "웹 개발 파트별로 정리한 간략한 기술 스택입니다.",
-        "분야별 기술에 대하여 더 자세한 내용은 소개 페이지에서 확인 하실 수 있습니다."
+        "분야별 기술에 대하여 더 자세한 내용은 소개 페이지에서 확인 하실 수 있습니다.",
       ],
       horizontalCards: [
         {
-            src: company,
-            title: "회사 프로젝트",
-            subtitle: [
-                "HTML·CSS·JQuery 웹 퍼블리싱",
-                "Vue·React SPA 개발",
-            ],
-            path: "/"
+          src: company,
+          title: "회사 프로젝트",
+          subtitle: ["HTML·CSS·JQuery 웹 퍼블리싱", "Vue·React SPA 개발"],
+          path: "/",
         },
         {
-            src: personal,
-            title: "개인 프로젝트",
-            subtitle: [
-            "SpringBoot·NodeJS API 구축",
-            "MySQL DB 스키마 설계"
-            ],
-            path: "/"
+          src: personal,
+          title: "개인 프로젝트",
+          subtitle: ["SpringBoot·NodeJS API 구축", "MySQL DB 스키마 설계"],
+          path: "/",
         },
       ],
     };
   },
-  props:{
-  },
+  props: {},
   components: {
     Navbar,
     VerticalCardSection,
@@ -104,7 +91,7 @@ body {
 
 .home .vertical-cards,
 .home .horizontal-cards {
-  width: 1080px;
+  width: 1200px;
   margin: 100px auto 0 auto;
 }
 
