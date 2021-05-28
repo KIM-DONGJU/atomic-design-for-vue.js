@@ -42,7 +42,7 @@ export default {
     return {
     };
   },
-  props:{
+  props: {
   },
   components: {
     AppLink,
@@ -59,7 +59,7 @@ section {
 }
 
 section .footer-link {
-  width: 1080px;
+  width: 1200px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -94,7 +94,7 @@ section .footer-link .sns a img:hover {
 }
 
 section .info {
-  width: 1080px;
+  width: 1200px;
   margin: 15px auto 0 auto;
   display: flex;
   flex-direction: row;
@@ -104,7 +104,7 @@ section .info {
 }
 
 section .copyright {
-  width: 1080px;
+  width: 1200px;
   margin: 10px auto 0 auto;
   padding-bottom: 15px;
 }
@@ -113,4 +113,5 @@ section .info span:nth-child(n):nth-child(-n+3)::after {
   content: "|";
   margin-left: 15px;
 }
+
 </style>
