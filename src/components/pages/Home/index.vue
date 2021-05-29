@@ -3,6 +3,9 @@
     <header>
       <Navbar />
     </header>
+    <div class="banner">
+      <img src="">
+    </div>
     <div class="vertical-cards">
       <VerticalCardSection
         :cards="verticalCards"
@@ -97,5 +100,11 @@ body {
 
 .home footer {
   margin-top: 100px;
+}
+
+.home .banner {
+  width: 100%;
+  background-color: blue;
+  height: auto;
 }
 </style>
