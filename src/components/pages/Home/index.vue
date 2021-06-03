@@ -4,7 +4,7 @@
       <Navbar />
     </header>
     <div class="banner">
-      <img src="@/assets/images/banner/Always.jpg">
+      <AppBanner image="/images/banner/Always.jpg"/>
     </div>
     <div class="vertical-cards">
       <VerticalCardSection
@@ -23,6 +23,7 @@
 </template>
 
 <script>
+import AppBanner from "../../atoms/AppBanner/index.vue";
 import Navbar from "../../organisms/Navbar/index.vue";
 import VerticalCardSection from "../../organisms/VerticalCardSection/index.vue";
 import HorizontalCardSection from "../../organisms/HorizontalCardSection/index.vue";
@@ -78,6 +79,7 @@ export default {
   },
   props: {},
   components: {
+    AppBanner,
     Navbar,
     VerticalCardSection,
     HorizontalCardSection,
@@ -102,18 +104,10 @@ body {
   margin-top: 100px;
 }
 
-.home .banner {
+.banner {
   margin-top: 200px;
   width: 100%;
   height: 100%;
-  background-color: rgb(75, 211, 213);
-}
-
-.banner img {
-  width: 100%;
-  max-width: 1920px;
-  margin: 0 auto;
-  display: block;
-  height: 100%;
+  background-color: rgb(23, 211, 212);
 }
 </style>

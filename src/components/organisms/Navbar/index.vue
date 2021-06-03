@@ -14,7 +14,7 @@
 import AppLogo from "../../atoms/AppLogo/index.vue";
 import HorizontalLinkList from "../../molecules/HorizontalLinkList/index.vue";
 import Login from "../../molecules/Login/index.vue";
-import logo from '../../../assets/images/logo/atomic-design.png'
+import logo from "../../../assets/images/logo/atomic-design.png";
 
 export default {
   name: "NavBar",
