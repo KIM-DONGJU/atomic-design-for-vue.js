@@ -38,4 +38,10 @@ export default {
   flex: 1;
 }
 
+@media screen and (max-width: 750px) {
+  .card-section {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
 </style>

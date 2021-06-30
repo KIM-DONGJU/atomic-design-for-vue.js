@@ -96,7 +96,9 @@ body {
 
 .home .vertical-cards,
 .home .horizontal-cards {
-  width: 1200px;
+  width: 90%;
+  max-width: 1200px;
+  min-width: 300px;
   margin: 100px auto 0 auto;
 }
 
