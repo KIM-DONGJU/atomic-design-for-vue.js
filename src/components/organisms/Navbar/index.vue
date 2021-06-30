@@ -1,7 +1,7 @@
 <template>
   <div class="nav-bar">
     <div class="menu">
-      <AppLogo logoClass="small" :src="logo" />
+      <AppLogo logoClass="small" :src="logoIcon" />
       <HorizontalLinkList :links="links" />
     </div>
     <div class="login">
@@ -39,7 +39,7 @@ export default {
           isNewWindow: true,
         },
       ],
-      logo: logo,
+      logoIcon: logo,
     };
   },
   components: {
@@ -60,7 +60,6 @@ export default {
   width: 1200px;
   display: flex;
   align-items: center;
-  background-color: white;
 }
 
 .menu {
