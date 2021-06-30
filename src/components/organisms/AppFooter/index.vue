@@ -28,7 +28,7 @@
       <span>깃허브 KIM-DONGJU</span>
     </div>
     <div class="copyright">
-      Copyright ⓒ 2021 KIMDONGJU All Rights Reserved.
+      <span>Copyright ⓒ 2021 KIMDONGJU All Rights Reserved.</span>
     </div>
 	</section>
 </template>
@@ -52,14 +52,24 @@ export default {
 </script>
 
 <style scoped>
+span,
+a {
+  font-size: 1.5rem;
+}
+
 section {
   padding: 20px;
   background-color: #39424c;
   color: white;
 }
 
+section > div {
+  width: 90%;
+  max-width: 1200px;
+  min-width: 300px;
+}
+
 section .footer-link {
-  width: 1200px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -94,7 +104,6 @@ section .footer-link .sns a img:hover {
 }
 
 section .info {
-  width: 1200px;
   margin: 15px auto 0 auto;
   display: flex;
   flex-direction: row;
@@ -104,7 +113,6 @@ section .info {
 }
 
 section .copyright {
-  width: 1200px;
   margin: 10px auto 0 auto;
   padding-bottom: 15px;
 }
@@ -112,6 +120,40 @@ section .copyright {
 section .info span:nth-child(n):nth-child(-n+3)::after {
   content: "|";
   margin-left: 15px;
+}
+
+@media screen and (max-width: 750px) {
+  html, body {
+    font-size: 8px;
+  }
+
+  section .footer-link {
+    display: grid;
+    grid-auto-columns: 1fr;
+    gap: 20px;
+  }
+
+  section .footer-link .brand {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  section .footer-link .sns {
+    justify-content: flex-start;
+  }
+
+  section .footer-link .sns a {
+    width: 10%;
+  }
+
+  section .info {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  section .info span:nth-child(n):nth-child(-n+3)::after {
+    content: "";
+  }
 }
 
 </style>
