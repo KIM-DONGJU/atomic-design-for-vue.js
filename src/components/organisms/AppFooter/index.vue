@@ -123,10 +123,6 @@ section .info span:nth-child(n):nth-child(-n+3)::after {
 }
 
 @media screen and (max-width: 750px) {
-  html, body {
-    font-size: 8px;
-  }
-
   section .footer-link {
     display: grid;
     grid-auto-columns: 1fr;
