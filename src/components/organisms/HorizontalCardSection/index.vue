@@ -15,7 +15,7 @@ export default {
     return {
     };
   },
-  props:{
+  props: {
     cards: Array,
   },
   components: {

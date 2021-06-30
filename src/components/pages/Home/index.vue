@@ -71,7 +71,7 @@ export default {
         {
           src: personal,
           title: "개인 프로젝트",
-          subtitle: ["SpringBoot·NodeJS API 구축", "MySQL DB 스키마 설계"],
+          subtitle: ["HTML·CSS·JQuery 웹 퍼블리싱", "Vue·React SPA 개발"],
           path: "/",
         },
       ],
