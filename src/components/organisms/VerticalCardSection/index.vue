@@ -46,4 +46,15 @@ export default {
   grid-column: 1/4;
 }
 
+@media screen and (max-width: 750px) {
+  .card-section {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 20px;
+  }
+
+  .title {
+    grid-column: 1/1;
+  }
+}
 </style>
