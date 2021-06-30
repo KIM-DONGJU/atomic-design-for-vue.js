@@ -1,4 +1,4 @@
-<template> 
+<template>
     <router-link class="card" :to="card.path">
         <div class="contents">
           <h3>{{ card.title }}</h3>
