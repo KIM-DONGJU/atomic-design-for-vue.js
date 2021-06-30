@@ -28,6 +28,7 @@ export default {
 <style scoped>
 a,
 router-link {
+  font-size: 1.5rem;
   color: black;
   text-decoration: none;
   transition: all 0.3s;
